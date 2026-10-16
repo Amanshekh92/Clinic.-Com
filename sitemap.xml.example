@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copy to sitemap.xml ONLY after the final URL is known and the clinic approves launch. Replace FINAL-URL. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://FINAL-URL/</loc></url>
+  <url><loc>https://FINAL-URL/privacy.html</loc></url>
+  <url><loc>https://FINAL-URL/terms.html</loc></url>
+</urlset>

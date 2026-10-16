@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# After launch (final URL known): Sitemap: https://FINAL-URL/sitemap.xml

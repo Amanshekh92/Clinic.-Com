@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SN Dental Clinic, Hoskote (Demo App)</title>
+<meta name="description" content="Demo app-style website for SN Dental Clinic, Hoskote. Request appointments by WhatsApp. Sample content.">
+<meta name="robots" content="noindex"><!-- remove at launch -->
+<!-- After deploy, add: <link rel="canonical" href="https://FINAL-URL/"> and an absolute og:image URL (assets/images/og-image.jpg). -->
+<meta property="og:type" content="website"><meta property="og:title" content="SN Dental Clinic, Hoskote"><meta property="og:description" content="Request a dental appointment by WhatsApp. Demo site.">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<meta name="theme-color" content="#0b3a5c"><meta name="color-scheme" content="light">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/config.js"></script>
+<script src="js/app.js" defer></script></head>
+<body>
+<a class="skip" href="#main" data-t="Skip to content"></a>
+<main class="app" id="main" tabindex="-1">
+<div class="demo" id="demo" data-t="Demo app: sample content. Details are placeholders until the clinic verifies them."></div>
+
+<section class="scr on" id="s-home">
+ <div class="bar"><button class="brand" data-go="more"><img src="assets/images/logo-mark.svg" width="36" height="36" alt=""><span><span class="cn"></span><small data-t="Hoskote"></small></span></button><button class="ib langbtn" type="button"></button></div>
+ <div class="hero" id="hero"><picture><source media="(max-width:600px)" srcset="assets/images/hero-dental-clinic-mobile.webp"><img id="hero-art" src="assets/images/hero-dental-clinic.webp" width="1600" height="900" alt="Illustration of a modern dental treatment room (sample image)" fetchpriority="high"></picture><h1><span data-t="Healthy Smiles"></span><span data-t="Brighter Lives"></span></h1><p data-t="Dental care in Hoskote"></p></div>
+ <form class="search" id="sf" role="search"><label class="sr" for="q" style="position:absolute;left:-999px" data-t="Search treatments…"></label><input id="q" type="search" data-tp="Search treatments…"><button type="button" class="qgo" id="qgo" aria-label="Search">🔍</button></form>
+ <h2 data-t="Popular treatments"></h2>
+ <div class="row4"><button class="tile" data-book="checkup"><img class="th" src="assets/images/treatment-checkup.webp" width="600" height="400" alt="" loading="lazy"><span data-t="Dental Checkup"></span></button><button class="tile" data-book="cleaning"><img class="th" src="assets/images/treatment-cleaning.webp" width="600" height="400" alt="" loading="lazy"><span data-t="Teeth Cleaning"></span></button><button class="tile" data-book="filling"><img class="th" src="assets/images/treatment-filling.webp" width="600" height="400" alt="" loading="lazy"><span data-t="Tooth Filling"></span></button><button class="tile" data-book="rct"><img class="th" src="assets/images/treatment-root-canal.webp" width="600" height="400" alt="" loading="lazy"><span data-t="Root Canal"></span></button></div>
+ <button class="cta" data-go="book"><span class="av"><img src="assets/images/dentist-portrait.webp" width="800" height="1000" alt="" loading="lazy"></span><span><b data-t="Book Appointment via WhatsApp"></b><small data-t="Send a request. The clinic confirms."></small></span><span class="wa" aria-hidden="true">WA</span></button>
+ <div class="soft"><h2 data-t="What to expect (sample text)"></h2>
+ <div class="row4"><div class="tile"><img class="ico" src="assets/images/icon-consultation.svg" width="46" height="46" alt="" loading="lazy"><span data-t="Check-ups"></span></div><div class="tile"><img class="ico" src="assets/images/icon-clear-advice.svg" width="46" height="46" alt="" loading="lazy"><span data-t="Clear advice"></span></div><div class="tile"><img class="ico" src="assets/images/icon-easy-booking.svg" width="46" height="46" alt="" loading="lazy"><span data-t="Easy booking"></span></div><div class="tile"><img class="ico" src="assets/images/icon-questions.svg" width="46" height="46" alt="" loading="lazy"><span data-t="Your questions"></span></div></div>
+</div>
+<h2 data-t="Our clinic"></h2>
+<div class="gal2">
+<figure><img src="assets/images/clinic-treatment-room.webp" width="416" height="536" loading="lazy" alt="Treatment room with a dental chair and overhead lamp at SN Dental Clinic"><figcaption data-t="Treatment room"></figcaption></figure>
+<figure><img src="assets/images/clinic-reception.webp" width="345" height="168" loading="lazy" alt="Waiting area with yellow chairs and the reception desk"><figcaption data-t="Reception"></figcaption></figure>
+<figure class="top"><img src="assets/images/clinic-signboard.webp" width="307" height="399" loading="lazy" alt="Tooth-shaped roadside signboard of SN Dental Clinic"><figcaption data-t="Signboard"></figcaption></figure>
+<figure><img src="assets/images/clinic-storefront.webp" width="345" height="263" loading="lazy" alt="Building on Chintamani Road where the clinic is located"><figcaption data-t="Storefront"></figcaption></figure>
+</div><p class="muted0" style="padding:0 16px" data-t="Photos are from the clinic's Google Maps listing."></p>
+<div class="band"><h2 data-t="Family and children"></h2><p data-t="Ask the clinic which age groups it treats."></p><div class="duo"><img src="assets/images/family-smile.webp" width="1200" height="800" loading="lazy" alt="Illustration of a smiling family (sample image)"><img src="assets/images/smile-closeup.webp" width="1200" height="800" loading="lazy" alt="Illustration of a healthy smile (sample image)"></div><button class="btn" data-go="book" data-t="Book a visit"></button></div>
+<h2 data-t="Meet the dentist"></h2>
+<div class="box dr"><img src="assets/images/dentist-portrait.webp" width="800" height="1000" loading="lazy" alt="Illustration of a dentist (sample image, not the clinic's doctor)"><div><b id="hd-name"></b><p id="hd-sub" class="muted0"></p><button class="btn sm" data-go="doc" data-t="View dentist profile"></button></div></div>
+<h2 data-t="Contact and location"></h2>
+<div class="box"><div id="hc"></div><div class="acts" id="ha"><button class="btn sm" data-act="call" data-t="Call"></button><button class="btn sm" data-act="wa" data-t="WhatsApp"></button><button class="btn sm" data-act="dir" data-t="Directions"></button><button class="btn sm" data-act="mail" data-t="Email"></button></div><button class="btn o sm" data-info="hours" data-t="Opening Hours"></button><div id="mapbox"></div></div>
+</section>
+
+<section class="scr" id="s-svc"><div class="bar"><button class="ib" data-back aria-label="Back">‹</button><h1 data-t="Treatments"></h1><button class="ib langbtn" type="button"></button></div><div style="padding:0 16px 10px"><label class="sr" for="q2" data-t="Search treatments"></label><input id="q2" type="search" autocomplete="off" data-tp="Search treatments…"></div><div class="chips" id="chips"></div><div class="g2" id="tl"></div><p class="muted" id="none" hidden><span data-t="No treatments match."></span> <button class="chip" id="clr" type="button" data-t="Clear search"></button></p></section>
+
+<section class="scr" id="s-book"><div class="bar"><button class="ib" data-back aria-label="Back">‹</button><h1 data-t="Book Appointment"></h1><button class="ib langbtn" type="button"></button></div>
+ <div class="steps" id="steps"><span><i>1</i><b data-t="Details"></b></span><span><i>2</i><b data-t="Confirm"></b></span><span><i>3</i><b data-t="Done"></b></span></div>
+ <form class="form" id="bf" novalidate>
+  <label for="f-name" data-t="Full Name"></label><input id="f-name" autocomplete="name" maxlength="60" data-tp="Enter your full name"><small class="err" id="e-name"></small>
+  <label for="f-phone" data-t="Mobile Number"></label><input id="f-phone" type="tel" inputmode="tel" autocomplete="tel" data-tp="Enter mobile number"><small class="err" id="e-phone"></small>
+  <label for="f-tr" data-t="Select Treatment"></label><select id="f-tr"></select><small class="err" id="e-tr"></small>
+  <label for="f-date" data-t="Preferred Date"></label><input id="f-date" type="date"><small class="err" id="e-date"></small>
+  <label for="f-time" data-t="Preferred Time"></label><select id="f-time"></select>
+  <label for="f-msg" data-t="Additional Message (Optional)"></label><textarea id="f-msg" rows="3" maxlength="300" data-tp="Tell us your concern…"></textarea>
+  <label class="chk"><input type="checkbox" id="f-ok"><span data-t="I agree to share these details with the clinic by WhatsApp to arrange an appointment."></span></label><small class="err" id="e-ok"></small>
+  <button class="btn" type="button" id="bsub" data-t="Review request"></button>
+ </form>
+ <div id="b2" hidden><div class="box"><dl id="sum"></dl></div><div style="padding:0 16px"><button class="btn" id="send" type="button" data-t="Send Request on WhatsApp"></button><button class="btn o" id="edit" type="button" data-t="Edit"></button><button class="btn o" id="callbk" type="button" data-act="call" data-t="Call the clinic to book" hidden></button><p id="st" role="status" aria-live="polite"></p></div></div>
+ <div id="b3" hidden><div class="box"><p class="ok" data-t="Request prepared"></p><p data-t="Send the WhatsApp message to share it. This is not a confirmed booking."></p><p data-t="Opening WhatsApp does not mean your message was sent. Tap Send in WhatsApp. If it did not open, use the button below."></p></div><div style="padding:0 16px"><button class="btn" id="again" type="button" data-t="Open WhatsApp again"></button><button class="btn o" data-go="home" type="button" data-t="Back to Home"></button></div></div>
+</section>
+
+<section class="scr" id="s-doc"><div class="bar"><button class="ib" data-back aria-label="Back">‹</button><h1 data-t="Our Dentist"></h1><button class="ib langbtn" type="button"></button></div><div class="doc dp">
+<div class="dhero"><div class="port" id="port"><img src="assets/images/dentist-portrait.webp" width="800" height="1000" alt="Illustration of a dentist (sample image, not the clinic's doctor)" loading="lazy"></div><div class="dcap"><span class="dtag" data-t="Sample picture"></span><b id="dp-name"></b><span id="dp-sub"></span></div></div>
+<p class="muted dnote" data-t="Placeholder picture, not a real person."></p>
+<div class="box dfacts"><dl id="dl"></dl></div>
+<h2 class="dh" data-t="Treatments at the clinic"></h2><div class="dchips" id="dp-svc"></div>
+<h2 class="dh" data-t="Inside the clinic"></h2>
+<div class="gal"><figure><img src="assets/images/clinic-storefront.webp" width="345" height="263" alt="SN Dental Clinic storefront" loading="lazy"><figcaption data-t="Clinic front"></figcaption></figure><figure><img src="assets/images/clinic-treatment-room.webp" width="416" height="536" alt="Treatment room with dental chair" loading="lazy"><figcaption data-t="Treatment room"></figcaption></figure><figure><img src="assets/images/clinic-reception.webp" width="345" height="168" alt="Reception and waiting area" loading="lazy"><figcaption data-t="Reception"></figcaption></figure><figure><img src="assets/images/clinic-signboard.webp" width="307" height="399" alt="SN Dental Clinic roadside signboard" loading="lazy"><figcaption data-t="Signboard"></figcaption></figure></div>
+<div class="box dvisit"><b data-t="Visit us"></b><p id="dp-addr" class="muted0"></p><div class="acts" id="dp-acts"><button class="btn sm" data-act="call" data-t="Call"></button><button class="btn sm" data-act="wa" data-t="WhatsApp"></button><button class="btn sm" data-act="dir" data-t="Get Directions"></button><button class="btn sm" data-act="view" data-t="View on Google Maps"></button></div><button class="btn" data-go="book" data-t="Book Appointment"></button></div>
+<p class="muted dnote" data-t="Doctor details are added only after the clinic confirms them."></p>
+</div>
+</section>
+
+<section class="scr" id="s-appt"><div class="bar"><button class="ib" data-back aria-label="Back">‹</button><h1 data-t="My Appointments"></h1><button class="ib langbtn" type="button"></button></div><div class="chips" id="atabs" role="tablist"></div><div class="box"><p data-t="This demo does not track appointments. The clinic confirms each request by WhatsApp or phone."></p><button class="btn" data-go="book" data-t="Make a new request"></button></div></section>
+
+<section class="scr" id="s-rev"><div class="bar"><button class="ib" data-back aria-label="Back">‹</button><h1 data-t="Reviews & Ratings"></h1><button class="ib langbtn" type="button"></button></div><div class="box"><p id="rvtxt" style="font-weight:700"></p><p id="rvnote" class="muted0"></p><button class="btn" data-act="rev" data-t="Read reviews on Google Maps"></button></div></section>
+
+<section class="scr" id="s-prof"><div class="bar"><button class="ib" data-back aria-label="Back">‹</button><h1 data-t="My Profile"></h1><button class="ib langbtn" type="button"></button></div><div class="box" style="display:flex;gap:12px;align-items:center;margin-top:4px"><svg width="52" height="52" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0b7d7d" stroke-width="1.6"><circle cx="12" cy="12" r="11" fill="#e3f3f8" stroke="none"/><circle cx="12" cy="9" r="3.6"/><path d="M5 20c1.2-4 4.2-5.2 7-5.2s5.8 1.2 7 5.2"/></svg><div><b data-t="Guest"></b><p class="muted0" data-t="No account needed. Accounts, records and reminders need a backend (future phase)."></p></div></div><div class="list" style="margin-top:10px"><button data-go="appt"><span data-t="My Appointments"></span>›</button><button id="lg"><span data-t="Language"></span><em id="lv"></em></button><button data-act="wa"><span data-t="Help & Support"></span>›</button><button data-go="doc"><span data-t="Our Dentist"></span>›</button><button data-go="rev"><span data-t="Reviews & Ratings"></span>›</button><button data-go="more"><span data-t="About Clinic"></span>›</button><button data-info="privacy"><span data-t="Privacy Policy"></span>›</button><button data-info="terms"><span data-t="Terms & Conditions"></span>›</button></div></section>
+
+<section class="scr" id="s-more"><div class="bar"><button class="ib" data-back aria-label="Back">‹</button><h1 data-t="More"></h1><button class="ib langbtn" type="button"></button></div><div class="list" style="margin-bottom:12px"><button data-go="doc"><span class="cn"></span><span data-t="Hoskote, Karnataka"></span></button></div><div class="list">
+<button data-act="dir"><span data-t="Our Location"></span>›</button><button data-act="call"><span data-t="Call Clinic"></span>›</button><button data-act="wa"><span data-t="WhatsApp"></span>›</button><button data-act="mail"><span data-t="Email Us"></span>›</button><button data-info="hours"><span data-t="Opening Hours"></span>›</button><button data-info="faq"><span data-t="FAQs"></span>›</button><button data-info="privacy"><span data-t="Privacy Policy"></span>›</button><button data-info="terms"><span data-t="Terms & Conditions"></span>›</button></div><p class="muted" style="text-align:center;margin-top:12px" data-t="Version 1.0 (demo). General information only, not medical advice."></p></section>
+
+<section class="scr" id="s-info"><div class="bar"><button class="ib" data-back aria-label="Back">‹</button><h1 id="it"></h1><button class="ib langbtn" type="button"></button></div><div class="box" id="ib"></div></section>
+</main>
+<nav aria-label="Main"><button data-go="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v10H3z"/></svg><span data-t="Home"></span></button><button data-go="svc"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span data-t="Services"></span></button><button data-go="appt"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span data-t="Bookings"></span></button><button data-go="prof"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 5-7 8-7s7 2 8 7"/></svg><span data-t="Profile"></span></button></nav>
+<p id="toast" role="status" aria-live="polite"></p>
+</body></html>
