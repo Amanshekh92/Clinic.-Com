@@ -41,7 +41,7 @@ function render(){
  $$("[data-t]").forEach(n=>n.textContent=t(n.dataset.t));
  $$("[data-tp]").forEach(n=>n.placeholder=t(n.dataset.tp));
  $$(".cn").forEach(n=>n.textContent=C.name);
- $("#demo").hidden=!C.demo;
+ $("#demo").hidden=true;
  $$(".langbtn").forEach(b=>{b.textContent=lang==="en"?"हिं":"EN";b.setAttribute("aria-label",t("Language"))});$("#lv").textContent=lang==="en"?"English":"हिन्दी";
  const vis=C.svc.filter(s=>s.ok||C.demo);
  const ch=$("#chips");ch.replaceChildren();
@@ -97,8 +97,8 @@ const ACT={
  dir(){const u=C.address&&safe(C.maps);if(!u)return toast(t("Directions are off until the clinic's address and Maps link are confirmed."));openUrl(u)},
  mail(){if(!mailOk())return toast(t("Email is not set up yet."));location.href="mailto:"+C.email},
  map(){const u=safeEmbed(C.mapEmbed);if(!u)return toast(t("Map is off until the clinic's address is confirmed."));const f=el("iframe");f.src=u;f.title=t("Map showing the clinic location");f.loading="lazy";f.referrerPolicy="no-referrer";f.setAttribute("sandbox","allow-scripts allow-same-origin allow-popups");f.style.cssText="border:0;display:block;width:100%;height:clamp(220px,62vw,340px);max-width:100%;border-radius:14px;margin-bottom:8px";
-   const note=$("#mapnote"),btn=$("#mapbox [data-act=map]");if(btn)btn.remove();note.textContent=t("Map not showing? Open it in Google Maps.");
-   const onV=e=>{if(/google\./.test(e.blockedURI||"")){document.removeEventListener("securitypolicyviolation",onV);f.remove();note.textContent=t("The map cannot be embedded on this page. Open it in Google Maps.")}};document.addEventListener("securitypolicyviolation",onV);$("#mapbox").prepend(f)},
+ const note=$("#mapnote"),btn=$("#mapbox [data-act=map]");if(btn)btn.remove();note.textContent=t("Map not showing? Open it in Google Maps.");
+ const onV=e=>{if(/google\./.test(e.blockedURI||"")){document.removeEventListener("securitypolicyviolation",onV);f.remove();note.textContent=t("The map cannot be embedded on this page. Open it in Google Maps.")}};document.addEventListener("securitypolicyviolation",onV);$("#mapbox").prepend(f)},
  rev(){const u=safe(C.reviews);if(!u)return toast(t("Reviews link is not set up yet."));openUrl(u)}};
 document.addEventListener("click",e=>{const x=e.target.closest("[data-go],[data-back],[data-book],[data-info],[data-act],#clr");if(!x)return;
  if(x.id==="clr"){q="";cat="All";$("#q2").value="";$("#q").value="";return render()}
