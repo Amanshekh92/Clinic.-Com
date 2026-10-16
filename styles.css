@@ -43,9 +43,9 @@ nav button{background:none;border:0;border-radius:18px;color:#4b5d6b;font-size:.
 #toast{position:fixed;left:12px;right:12px;bottom:90px;background:#222;color:#fff;padding:12px;border-radius:12px;z-index:20;display:none}#toast.on{display:block}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
-.soft{background:#eaf7f7 url(../assets/images/bg-soft-teal.webp) center/cover;padding:6px 0 14px;margin-top:14px}
+.soft{background:#eaf7f7 url(bg-soft-teal.webp) center/cover;padding:6px 0 14px;margin-top:14px}
 .gal{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 12px}.gal figure{margin:0;background:#fff;border:1px solid var(--ln);border-radius:16px;overflow:hidden}.gal img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block}.gal figcaption{padding:8px 10px;font-weight:600;color:var(--n);font-size:.85rem}
-.band{margin:18px 12px 0;border-radius:22px;padding:18px;color:#fff;background:#0b2545 url(../assets/images/bg-navy-pattern.webp) center/cover;display:grid;gap:12px}.band h2{color:#fff;margin:0}.band p{margin:0;color:#dbe8f0}
+.band{margin:18px 12px 0;border-radius:22px;padding:18px;color:#fff;background:#0b2545 url(bg-navy-pattern.webp) center/cover;display:grid;gap:12px}.band h2{color:#fff;margin:0}.band p{margin:0;color:#dbe8f0}
 .band .duo{display:grid;grid-template-columns:1fr 1fr;gap:10px}.band img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:14px;display:block}
 .band .btn{background:#fff;color:var(--n);border-color:#fff}
 .brand img{border-radius:10px}
